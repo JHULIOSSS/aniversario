@@ -208,12 +208,7 @@ span:before {
         bottom: 92%;
     }
 
-    .Relogio h3 {
-        color: #fff126;
 
-        text-align: center;
-
-    }
 
     #countdown {}
 
@@ -228,8 +223,15 @@ span:before {
 
 
     .time-box {
-        background: #fbff0b;
-        box-shadow: 3px 10px rgb(56, 56, 56);
+        /* background: #fbff0b;
+        box-shadow: 3px 10px rgb(56, 56, 56); */
+
+
+
+
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(px);
+
         padding: 3px;
         border-radius: 5px;
 
