@@ -205,27 +205,30 @@ span:before {
 
     .Relogio {
         position: relative;
-        bottom: 89%;
+        bottom: 92%;
     }
 
     .Relogio h3 {
         color: #fff126;
-        margin-top: -18px;
+
         text-align: center;
-        margin-bottom: -5px;
+
     }
+
+    #countdown {}
 
     .countdown-container {
         display: flex;
         justify-content: center;
-        gap: 3px;
-        margin-bottom: 10px;
+        position: relative;
+        top: -50px;
+        gap: 4px;
         padding: 2%;
     }
 
 
     .time-box {
-        background: #fff126;
+        background: #fbff0b;
         box-shadow: 3px 10px rgb(56, 56, 56);
         padding: 3px;
         border-radius: 5px;
@@ -234,7 +237,7 @@ span:before {
     }
 
     .time-box span {
-        font-size: 25px;
+        font-size: 20px;
         display: block;
         text-align: center;
         color: #222020;
