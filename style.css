@@ -1,0 +1,331 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Tilt Warp", sans-serif;
+
+}
+
+.Geral {
+    background-image: url('IMAGENS/BACKGROUND.png');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a tela */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetição */
+    height: 100vh;
+    /* 100% da altura da tela */
+    width: 80%;
+
+}
+
+.Savrthedate {
+    position: absolute;
+    left: 20%;
+    top: 30px;
+    width: 100px;
+    z-index: 1;
+}
+
+.Savrthedate img {
+    max-width: 32vh;
+    animation-duration: 3s;
+}
+
+/* relogio */
+
+.Relogio {
+    position: relative;
+    bottom: 89%;
+}
+
+.Relogio h3 {
+    color: #fff126;
+    margin-top: -18px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 10px;
+    padding: 2%;
+}
+
+
+.time-box {
+    background: #fff126;
+    box-shadow: 3px 10px rgb(56, 56, 56);
+    padding: 3px;
+    border-radius: 5px;
+
+
+}
+
+.time-box span {
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    color: #222020;
+
+}
+
+
+.label {
+    font-size: 10px;
+    margin-top: 3px;
+    letter-spacing: 3px;
+    color: #222020;
+}
+
+#message {
+    font-size: 24px;
+    color: #00ff88;
+}
+
+.hidden {
+    display: none;
+}
+
+/* em breve */
+.ring {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-family: "Tilt Warp", sans-serif;
+
+    font-size: 12px;
+    color: #fff000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.ring:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff000;
+    border-right: 3px solid #fff000;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+}
+
+
+span:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff000;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px #fff000;
+}
+
+@keyframes animateC {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+@media (max-width: 738px) {
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Tilt Warp", sans-serif;
+
+    }
+
+    .Geral {
+        background-image: url('BACKGROUND.png');
+        /* Substitua pelo caminho da sua imagem */
+        background-size: cover;
+        /* Faz a imagem cobrir toda a tela */
+        background-position: center;
+        /* Centraliza a imagem */
+        background-repeat: no-repeat;
+        /* Evita repetição */
+        height: 110vh;
+        /* 100% da altura da tela */
+        width: 100%;
+
+    }
+
+    .Savrthedate {
+        position: absolute;
+        left: 20%;
+        top: 30px;
+        width: 100px;
+        z-index: 1;
+    }
+
+    .Savrthedate img {
+        max-width: 32vh;
+        animation-duration: 3s;
+    }
+
+    /* relogio */
+
+    .Relogio {
+        position: relative;
+        bottom: 89%;
+    }
+
+    .Relogio h3 {
+        color: #fff126;
+        margin-top: -18px;
+        text-align: center;
+        margin-bottom: -5px;
+    }
+
+    .countdown-container {
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        margin-bottom: 10px;
+        padding: 2%;
+    }
+
+
+    .time-box {
+        background: #fff126;
+        box-shadow: 3px 10px rgb(56, 56, 56);
+        padding: 3px;
+        border-radius: 5px;
+
+
+    }
+
+    .time-box span {
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        color: #222020;
+
+    }
+
+
+    .label {
+        font-size: 10px;
+        margin-top: 3px;
+        letter-spacing: 3px;
+        color: #222020;
+    }
+
+    #message {
+        font-size: 24px;
+        color: #00ff88;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+    /* em breve */
+    .ring {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        background: transparent;
+        border: 3px solid #3c3c3c;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px;
+        font-family: "Tilt Warp", sans-serif;
+
+        font-size: 12px;
+        color: #fff000;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px #fff000;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    }
+
+    .ring:before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        border: 3px solid transparent;
+        border-top: 3px solid #fff000;
+        border-right: 3px solid #fff000;
+        border-radius: 50%;
+        animation: animateC 2s linear infinite;
+    }
+
+
+    span:before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #fff000;
+        top: -6px;
+        right: -8px;
+        box-shadow: 0 0 20px #fff000;
+    }
+
+    @keyframes animateC {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(45deg);
+        }
+
+        100% {
+            transform: rotate(405deg);
+        }
+    }
+}
