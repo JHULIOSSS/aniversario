@@ -67,6 +67,7 @@ html {
     padding: 3px;
     border-radius: 5px;
 
+
 }
 
 .time-box span {
@@ -74,7 +75,9 @@ html {
     display: block;
     text-align: center;
     color: #222020;
+
 }
+
 
 .label {
     font-size: 10px;
@@ -91,6 +94,7 @@ html {
 .hidden {
     display: none;
 }
+
 /* em breve */
 .ring {
     position: absolute;
@@ -197,12 +201,12 @@ span:before {
     }
 
     .pulse-button {
+        margin-left: 33%;
         position: fixed;
-        top: 80%;
+        top: 77%;
         border: none;
         color: white;
         padding: 5px 12px;
-        text-align: center;
         text-decoration: none;
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
@@ -231,11 +235,13 @@ span:before {
     }
 
     .pulse-button button {
+
         color: #02003f;
         background-color: aliceblue;
         border-radius: 15px;
         font-size: 18px;
         font-family: "Tilt Warp", sans-serif;
+
 
     }
 
