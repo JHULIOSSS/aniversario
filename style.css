@@ -4,7 +4,6 @@ html {
     padding: 0;
     height: 100%;
     font-family: "Tilt Warp", sans-serif;
-
 }
 
 .Geral {
@@ -19,8 +18,13 @@ html {
     height: 100vh;
     /* 100% da altura da tela */
     width: 80%;
-
 }
+
+/* pagina bem vindo */
+
+
+
+/* final pagina bem vindo */
 
 .Savrthedate {
     position: absolute;
@@ -56,7 +60,6 @@ html {
     margin-bottom: 10px;
     padding: 2%;
 }
-
 
 .time-box {
     background: #fff126;
@@ -106,7 +109,6 @@ html {
     text-align: center;
     line-height: 45px;
     font-family: "Tilt Warp", sans-serif;
-
     font-size: 12px;
     color: #fff000;
     letter-spacing: 3px;
@@ -170,7 +172,6 @@ span:before {
         padding: 0;
         height: 100%;
         font-family: "Tilt Warp", sans-serif;
-
     }
 
     .Geral {
@@ -185,8 +186,73 @@ span:before {
         height: 110vh;
         /* 100% da altura da tela */
         width: 100%;
+    }
+
+    /* pagina bem vindo */
+
+
+    .Bem-vindo {
+        background-image: url(background-bemvindo.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
 
     }
+
+    .pulse-button {
+        position: relative;
+        top: 80%;
+        border: none;
+        color: white;
+        padding: 5px 12px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .pulse-button:hover {
+        animation: none;
+        /* Remove a animação ao passar o mouse */
+        transform: scale(1);
+        /* Volta ao tamanho normal */
+    }
+
+    .pulse-button button {
+        color: #02003f;
+        background-color: aliceblue;
+        border-radius: 15px;
+        font-size: 18px;
+        font-family: "Tilt Warp", sans-serif;
+
+    }
+
+
+    .Mensagem {
+        font-size: 12px;
+        color: aliceblue;
+        position: relative;
+        top: 80%;
+        text-align: center;
+    }
+
+    /* final pagina bem vindo */
 
     .Savrthedate {
         position: absolute;
@@ -208,8 +274,6 @@ span:before {
         bottom: 92%;
     }
 
-
-
     #countdown {}
 
     .countdown-container {
@@ -221,20 +285,13 @@ span:before {
         padding: 2%;
     }
 
-
     .time-box {
         /* background: #fbff0b;
         box-shadow: 3px 10px rgb(56, 56, 56); */
-
-
-
-
         background-color: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(px);
-
         padding: 3px;
         border-radius: 5px;
-
 
     }
 
@@ -245,7 +302,6 @@ span:before {
         color: #222020;
 
     }
-
 
     .label {
         font-size: 10px;
@@ -262,7 +318,6 @@ span:before {
     .hidden {
         display: none;
     }
-
 
     /* em breve */
     .ring {
@@ -300,7 +355,6 @@ span:before {
         border-radius: 50%;
         animation: animateC 2s linear infinite;
     }
-
 
     span:before {
         content: '';
